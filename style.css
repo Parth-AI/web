@@ -1,0 +1,86 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+
+#navbar{
+     position: sticky;
+     top: 0;
+     z-index: 10;
+}
+
+.navbar-brand img{
+     height:70px;
+     padding-left: 70px;
+}
+
+.navbar-nav li{
+     padding:0 10px;
+}
+
+.navbar-nav li a{
+     float: right;
+     text-align: left;
+     font-size: 22px;
+}
+
+#nav-bar ul li a:hover{
+     color:#fff!important
+}
+
+button{
+     position:relative;
+     height: 80px;
+     width: 100px; 
+     border:none;
+     outline:none;
+     background:#222;
+     color:#fff;
+     cursor: pointer;
+     font-size: 18px;
+     border-radius:5px;
+     font-family: 'Raleway' sans-serif
+ }
+ 
+ button:before{
+   position:absolute;   
+   content:'';
+   top:-2px;
+   left:-2px;
+  height:calc(100% + 4px);
+   width:calc(100%  + 4px);
+   border-radius:5px;
+   background: linear-gradient(45deg,#ff0000,#ff7300,#fffb00,#48ff00,#00ffd5,#002bff,#7a00ff,#ff00c8,#ff0000);
+   background-size: 400%;
+   z-index: -1;
+   opacity:0;
+   transition: opacity .3s ease-in-out;
+   animation: animate 20s linear infinite;
+ }
+ 
+ button:hover:before{
+   opacity:1;
+ }
+ 
+ button:hover:active{
+   background: none;
+ }
+ 
+#btn1{
+     background: #111;
+     color:#fff;
+     border-radius:5px;
+     border:0px solid;
+ }
+
+#btn2{
+     background: #111;
+     color:#fff;
+     border-radius:5px;
+     border:0px solid;
+}
+
+.dropdown-menu:hover{
+     color:#222;
+}
+
